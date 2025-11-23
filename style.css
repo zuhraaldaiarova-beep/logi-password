@@ -1,0 +1,146 @@
+body{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    font-family:Georgia, 'Times New Roman', Times, serif ;
+    justify-content: center;
+    flex-wrap: wrap;
+    /* margin-top: 350px; */
+background-size: cover;
+   background-image: url(./ChatGPT\ Image\ 23\ нояб.\ 2025\ г.\,\ 22_11_08.png);
+
+}
+.card{
+    width: 400px;
+    height: 350px;
+    display: block;
+    flex-wrap: wrap;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(15px);
+    border: px solid (255, 255, 255, 0.2);
+    border-radius: 20px;
+    padding-left: 40px;
+     background: linear-gradient(180deg, rgba(255,255,255,0.02), rgba(30,22,18,0.28));
+    box-shadow:
+      0 2px 6px rgba(0,0,0,0.6),
+      0 18px 60px rgba(0,0,0,0.6);
+    backdrop-filter: blur(6px) saturate(0.9);
+    overflow:visible;
+    margin-right: 50px;
+
+}
+#email,#password{
+    width: 350px;
+    height: 40px;
+    border-radius: 20px;
+
+}
+.btn{
+    width: 180px;
+    height: 40px;
+    display: block;
+    margin-top: 10px;
+    margin-left: 100px;
+    border-radius: 20px;
+
+}
+.logo{
+  text-align: center;
+  margin-right: 15px;
+}
+.spravochnik{
+    gap: 100px;
+    display: flex;
+}
+ 
+.btn {
+    /* width: 100%; */
+    padding: 12px;
+    font-size: 17px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    background: linear-gradient(90deg, #ff8a00, #ffc46c);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.4);
+    transition: 0.2s;
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,0.5);
+}
+
+ .card::before{
+    content:"";
+    position:absolute;
+    left:-2px; right:-2px; top:-2px; bottom:-2px;
+    border-radius: inherit;
+    pointer-events:none;
+    background: linear-gradient(90deg, rgba(255,138,0,0.06), rgba(255,200,120,0.03));
+    box-shadow: 0 0 26px rgba(255,140,10,0.08), inset 0 1px 0 rgba(255,255,255,0.02);
+    z-index:-1;
+  }
+  .card .glow-outline{
+    position:absolute;
+    inset: -6px;
+    border-radius: inherit;
+    pointer-events:none;
+    box-shadow: 0 12px 40px rgba(255,110,10,0.06), 0 2px 6px rgba(255,110,10,0.02) inset;
+    z-index:-2;
+  }
+  .link_1{
+    color:orange ;
+  }
+  .link{
+    color: #f5d8b7;
+  }
+h1{
+    margin:0 0 14px 0;
+    font-family: "Georgia", "Times New Roman", serif;
+    font-size:30px;
+    letter-spacing:0.5px;
+    color: orange;
+    margin-top: 15px;
+    text-shadow: 0 1px 12px rgba(255,140,30,0.06);
+  }
+
+  label{
+    display:block;
+    margin-bottom:8px;
+    font-weight:600;
+    color: #f5d8b7;
+    text-shadow:0 1px 0 rgba(0,0,0,0.4);
+  }
+  h3,h2{
+    color: #f5d8b7;
+    text-shadow:0 1px 0 rgba(0,0,0,0.4);
+  }
+input {
+  
+    border: 2px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+    outline: none;
+    transition: all 0.3s ease;
+    margin: 5px;
+}
+
+input:focus {
+    border-color: #FFD700;
+    animation: pulse-glow 1.5s infinite alternate;
+    background-color: #FFFDE7;
+}
+
+@keyframes pulse-glow {
+    from {
+        box-shadow: 0 0 5px rgba(255, 215, 0, 0.4);
+    }
+    to {
+        box-shadow: 0 0 20px rgba(255, 215, 0, 0.8);
+    }
+}
+.footer-text{
+color: #f5d8b7;
+  text-align: center;
+  margin-top: 10px;
+}
